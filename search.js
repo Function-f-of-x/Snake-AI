@@ -103,7 +103,7 @@ class Search {
             let index = 0;
 
             for (let i = 0; i < open_list.length; i++) {
-                if (open_list[i].f > current_node.f) {
+                if (open_list[i].f < current_node.f) {
                     current_node = open_list[i];
                     current_index = index;
                 }
