@@ -162,6 +162,7 @@ class Search {
                 }
             }
         }
+        
         let path = [];
         for (let i = 0; i < possible_paths.length; i++) {
             if (possible_paths[i].length < path.length) {
