@@ -10,7 +10,7 @@ function setup() {
     apple = new Apple();
     search = new Search(snake, apple);
     search.getPath();
-    frameRate(2000);
+    frameRate(200);
 }
 
 function draw() {
