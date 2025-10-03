@@ -163,12 +163,12 @@ class Search {
             }
         }
         
-        let path = [];
-        for (let i = 0; i < possible_paths.length; i++) {
-            if (possible_paths[i].length < path.length) {
-                path = possible_paths[i];
+        let path = possible_paths.length > 0 ? possible_paths[0] : [];
+            for (let i = 1; i < possible_paths.length; i++) {
+                if (possible_paths[i].length < path.length) {
+                    path = possible_paths[i];
+                }
             }
-        }
         return path;
     }
 }
